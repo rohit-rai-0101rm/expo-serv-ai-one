@@ -7,6 +7,8 @@ export default function Index() {
       <Text className="text-5xl text-dark-200">Welcome </Text>
 
       <Link href="/onboarding">Onboarding Screen</Link>
+
+      <Link href="/movie/avenger">Avenger Movie</Link>
     </View>
   );
 }
