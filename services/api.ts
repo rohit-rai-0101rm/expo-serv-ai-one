@@ -3,7 +3,7 @@ export const TMDB_CONFIG = {
     API_KEY: process.env.EXPO_PUBLIC_MOVIE_API_KEY,
     headers: {
         accept: "application/json",
-        Authorization: `Bearer ${process.env.EXPO_PUBLIC_MOVIE_API_KEY}`,
+        Authorization: `Bearer ${process.env.EXPO_PUBLIC_MOVIE_API_TOKEN}`,
     },
 };
 
@@ -22,7 +22,7 @@ export const fetchMovies = async ({
     });
 
     if (!response.ok) {
-        throw new Error(`Failed to fetch movies: ${response.statusText}`);
+        throw new Error(`Failed to fetch movies: ${response}`);
     }
 
     const data = await response.json();

@@ -64,10 +64,10 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="search"
         options={{
-          title: "Search",
+          title: "search",
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon={icons.search} title="Search" />
+            <TabIcon focused={focused} icon={icons.search} title="search" />
           ),
         }}
       />
@@ -75,10 +75,10 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="saved"
         options={{
-          title: "Save",
+          title: "saved",
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon={icons.save} title="Save" />
+            <TabIcon focused={focused} icon={icons.save} title="saved" />
           ),
         }}
       />
